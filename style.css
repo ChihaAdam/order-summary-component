@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+body{
+    background-color:hsl(228, 75%, 94%);
+    background-image:url("./images/pattern-background-desktop.svg") ;
+    background-repeat: repeat-x;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    font-size: 16px;
+}
+*{
+    font-family: 'Red Hat Display', sans-serif; 
+    
+}
+h1{
+    font-weight: 900;
+    font-size: 1.5em;
+    color:hsl(223, 47%, 23%);
+    margin:0px;
+}
+.description{
+    color:hsl(224, 23%, 55%);
+    margin-bottom: 20px;
+}
+.container{
+    background-color: white;
+    max-width: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px hsla(224, 23%, 55%, 0.1);
+}
+.subcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    margin:20px auto 10px auto;
+    padding: 20px;
+    width: 75%;
+}
+.price{
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    padding:5px;
+}
+.details p{
+    margin:5px;
+}
+.d1{
+    font-weight:900;
+    color:hsl(223, 47%, 23%);
+}
+.d2{
+    color:hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+a{
+    margin-left: 100px;
+    color:hsl(245, 75%, 52%);
+    font-weight:900;
+}
+.payment{
+    margin-top: 30px;
+    background-color: hsl(245, 75%, 52%);
+    color:white;
+    font-weight: 900;
+    font-size: 1em;
+    padding:15px 20px;
+    border-radius: 15px;
+    border:none;
+    box-shadow: 10px 10px 15px hsl(224, 23%, 55%);
+    transition: all 0.3s ease;
+}
+.payment:hover{
+    background-color: hsl(245, 75%, 60%);
+}
+.payment:active{
+    box-shadow: 5px 5px 15px hsl(224, 23%, 35%);
+    transform: translateY(5px);
+}
+.cancel{
+    background-color: white;
+    border:none;
+    font-size: 1em;
+    font-weight: 900;
+    color:hsl(224, 23%, 55%);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    padding:10px 20px;
+}
+.cancel:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+button{
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent; /* For WebKit browsers (Chrome, Safari) */
+    -webkit-touch-callout: none; /* Disable iOS callout */
+    -webkit-user-select: none; /* Disable text selection */
+    user-select: none; /* Disable text selection */
+    outline: none;
+}
+@media screen and (max-width:450px){
+    .container{
+        transform: scale(0.95);
+    }
+    a{
+        margin:auto 5px auto auto;
+    }
+    .subcontainer{
+        width:85%;
+    }
+}
