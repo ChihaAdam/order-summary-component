@@ -9,6 +9,7 @@ body{
     align-items: center;
     height:100vh;
     font-size: 16px;
+    filter:contrast(1.5);
 }
 *{
     font-family: 'Red Hat Display', sans-serif; 
